@@ -1,0 +1,12 @@
+{
+  "name": "pug-vdom-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for pug-vdom",
+  "main": "pug-vdom-loader.js",
+  "author": "Alubto",
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "2.0.0",
+    "pug-vdom": "^1.1.2"
+  }
+}
