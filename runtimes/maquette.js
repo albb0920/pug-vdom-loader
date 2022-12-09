@@ -11,6 +11,15 @@ var h = function(){
       delete attributes["class"];
     }
 
+    // maquette breaks if children is a number
+    if (typeof children == "number"){
+      children = children.toString();
+    } else if(Array.isArray(children)){
+      children = children.map(function(child){
+        return (typeof child == "number") ? child.toString() : child;
+      })
+    }
+
     return realH(selector, attributes, children);
   }
 }();
